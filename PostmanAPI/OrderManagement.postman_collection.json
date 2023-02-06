@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "3fc7b0b1-07a5-4eaa-91d4-e938a306fba2",
+		"name": "OrderManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "product_id",
+							"value": "3",
+							"type": "default"
+						},
+						{
+							"key": "amount",
+							"value": "3",
+							"type": "default"
+						},
+						{
+							"key": "status",
+							"value": "w",
+							"type": "default"
+						},
+						{
+							"key": "order_price",
+							"value": "1500",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/ordermanagement/createorder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ordermanagement",
+						"createorder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CancelOrrderr",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "product_id",
+							"value": "1",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "1",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "order_price",
+							"value": "200",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "C",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/ordermanagement/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ordermanagement",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetHistoy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/ordermanagement",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ordermanagement"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

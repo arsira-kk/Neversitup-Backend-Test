@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "7a6814ab-7e18-48de-ae8a-d5ef87af1fb8",
+		"name": "Authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RegisterUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin4",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "default"
+						},
+						{
+							"key": "fname",
+							"value": "arsira",
+							"type": "default"
+						},
+						{
+							"key": "lname",
+							"value": "khomkhamnak",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "arsir@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "phone",
+							"value": "0919831032",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/authentication/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"authentication",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AuthLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin2",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "admin2",
+							"type": "default"
+						},
+						{
+							"key": "fname",
+							"value": "arsira",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "lname",
+							"value": "khomkhamnak",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "arsir@gmail.com",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "0919831032",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/authentication/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"authentication",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "admin4",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
